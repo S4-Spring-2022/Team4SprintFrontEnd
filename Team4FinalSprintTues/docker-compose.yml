@@ -1,0 +1,10 @@
+version: '1'
+services:
+  myapp-main:
+    image: Team4FinalSprint:latest
+    ports:
+      - 8080:8080
+    environment:
+      - spring.datasource.url=jdbc:mysql://host.docker.internal:3306/spring_2022
+      - spring.datasource.password=Keyin2021
+      - spring.datasource.username=root
